@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BME680 Sensor Data</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Patrick Moffitt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/sensor_data.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+  </head>
+  <body>
+    <div id="wrap">
+      <p id="time"></p>
+      <div class="gauge" id="temperature_c_gauge"></div>
+      <div class="chart" id="temperature_c"></div>
+
+      <div class="gauge" id="humidity_rh_gauge"></div>
+      <div class="chart" id="humidity_rh"></div>
+
+      <div class="gauge" id="pressure_kpa_gauge"></div>
+      <div class="chart" id="pressure_kpa"></div>
+
+      <div class="gauge" id="gas_ohms_gauge"></div>
+      <div class="chart" id="gas_ohms"></div>
+
+      <div class="gauge" id="battery_volts_gauge"></div>
+      <div class="chart" id="battery_volts"></div>
+    </div>
+  </body>
+</html>
+
