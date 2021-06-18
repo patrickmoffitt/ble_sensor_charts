@@ -2,6 +2,7 @@
 
 var epoch = []
 var temperature_c = []
+var temp_adjust = -1.3
 var humidity_rh = []
 var pressure_kpa = []
 var gas_ohms = []
@@ -167,7 +168,7 @@ function reqListener(responseText) {
      // console.log(obj.sensor_data)
     for (var idx in obj.sensor_data){
       epoch.push(obj.sensor_data[idx][0])
-      temperature_c.push(obj.sensor_data[idx][1])
+      temperature_c.push(obj.sensor_data[idx][1] + temp_adjust)
       humidity_rh.push(obj.sensor_data[idx][2])
       pressure_kpa.push(obj.sensor_data[idx][3])
       gas_ohms.push(obj.sensor_data[idx][4])
